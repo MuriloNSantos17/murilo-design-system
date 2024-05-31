@@ -1,11 +1,11 @@
 name: Deploy Docs
 
-on: 
+on:
   push:
     branches:
       - main
 
-jobs: 
+jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
@@ -14,21 +14,20 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with: 
+        with:
           node-version: 18
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
-        
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
+
       - run: npm ci
 
       - run: npm run build
         env:
-          TURBO_TOKEN: HJnb9cXO9avZjhpsALE7Q5jf
+          TURBO_TOKEN: ${{secrets.VERCEL_TOKEN}}
           TURBO_TEAM: murilo-santos-projects
-
 
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: touch storybook-static/.nojekyll && npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-        env: 
+        env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
