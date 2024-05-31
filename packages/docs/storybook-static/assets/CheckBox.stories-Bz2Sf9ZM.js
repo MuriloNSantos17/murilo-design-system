@@ -1,0 +1,3 @@
+import{j as s}from"./jsx-runtime-CsGkrc1M.js";import{C as c,B as i,T as m}from"./index-BeEj-Jqz.js";import"./index-lToYTJ1z.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-DmJoTbsg.js";import"./index-DCvIRzM-.js";const f={title:"Typograph/Check Box",component:c,args:{},decorators:[a=>s.jsxs(i,{as:"label",css:{display:"flex",flexDirection:"row",gap:"$2"},children:[a(),s.jsx(m,{size:"sm",children:"Accept terms of use"})]})]},r={args:{}};var e,o,t;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(t=(o=r.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const g=["Primary"];export{r as Primary,g as __namedExportsOrder,f as default};
