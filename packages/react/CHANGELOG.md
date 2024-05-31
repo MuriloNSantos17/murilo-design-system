@@ -1,5 +1,11 @@
 # @murilo-nsantos-ui/react
 
+## 3.0.0
+
+### Major Changes
+
+- updated style
+
 ## 2.0.0
 
 ### Major Changes
