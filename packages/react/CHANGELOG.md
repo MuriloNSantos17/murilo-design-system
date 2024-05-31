@@ -1,5 +1,11 @@
 # @murilo-nsantos-ui/react
 
+## 4.0.0
+
+### Major Changes
+
+- changed the rem values
+
 ## 3.0.0
 
 ### Major Changes
